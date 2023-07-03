@@ -46,14 +46,14 @@ async function loadUpcomingTasks() {
   
       var calendarEl = document.querySelector('.calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          defaultView: 'month',
-          locale: 'pt-BR'
-          // buttonText: {
-          //   today: "Hoje",
-          //   month: "Mês",
-          //   week: "Semana",
-          //   day: "Dia"
-          // }
+          initialView: 'dayGridWeek',
+          locale: 'pt-BR',
+          buttonText: {
+            today: "Hoje",
+            month: "Mês",
+            week: "Semana",
+            day: "Dia"
+          }
         //   themeSystem: 'bootstrap5',
           // events: upcomingTasks,
           // eventClick: function (event) {
