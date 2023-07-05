@@ -1,7 +1,7 @@
 .login-container {
     background-color: var(--branco);
-    height: 50rem;
-    width: 40rem;
+    height: 40rem;
+    width: 35rem;
     border-radius: 1.5rem;
     padding: 2rem;
     display: flex;

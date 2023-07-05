@@ -4,7 +4,9 @@
 }
 .menu ul li:nth-child(1) a{
     color: var(--preto);
-    transition: 5s;
+}
+.menu ul li:nth-child(1) a.dark{
+    color: var(--branco);
 }
 
 .menu ul li:nth-child(1) .blueMark{
@@ -65,16 +67,7 @@ h2{
     grid-area: 1/1/1/5;
     
 }
-.content {
-    border-radius: 1.5rem;
-    
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    
-    background-color: var(--branco);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px 2px;
-}
+
 .completed-toFinish{
     border-top: 1px solid color-mix(in srgb, var(--cinzaEscuro) 40%, white);;
     width: 100%;    
@@ -183,17 +176,16 @@ h2{
 .efficiency-desc{
     height: 15rem;
     width: 60%;
+
+    font-size: 1.4rem;
+
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
 }
 
-.graphic-img{
-    height: 15rem;
-    width: 35%;
-    background-color: #eee;
-}
+
 
 .classification {
     gap: 2rem;
@@ -215,6 +207,7 @@ h2{
 .classification li .position {
     height: auto;
     width: 6rem;
+    max-width: 6rem;
     position: relative;
 }
 
@@ -227,11 +220,11 @@ h2{
 
 
 .position i{
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(228, 228, 5);
     -webkit-text-stroke: 1px black;
     
-    top: -35%;
+    top: -20%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -256,7 +249,7 @@ h2{
 
 .classification li img {
     width: 6rem;
-    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
 
 }
@@ -285,4 +278,14 @@ h2{
     font-size: 1.4rem;
 
     white-space: nowrap;
+}
+.classification li span{
+    font-size: 1.2rem;
+
+    white-space: nowrap;
+}
+
+
+.graphic-img img{
+    width: 15rem;
 }

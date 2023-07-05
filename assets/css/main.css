@@ -18,11 +18,18 @@
     --cinzaEscuro: #838385;
     --branco: #fefefe;
     --preto: #000;
+    --mainDark: #1E1E1E;
 }
 
 
 .hide {
     display: none !important;
+}
+body.dark {
+    background-color: #073345;
+}
+.dark {
+    transition: .4s;
 }
 
 .triangle-topleft {
@@ -31,8 +38,8 @@
     left: 0;
     width: 0;
     height: 0;
-    border-top: 60rem solid var(--azulAnimo);
-    border-right: 60rem solid transparent;
+    border-top: 50rem solid var(--azulAnimo);
+    border-right: 50rem solid transparent;
 }
 
 .triangle-topright {
@@ -43,8 +50,8 @@
     width: 0;
     height: 0;
 
-    border-bottom: 60rem solid var(--azulAnimo);
-    border-left: 60rem solid transparent;
+    border-bottom: 50rem solid var(--azulAnimo);
+    border-left: 50rem solid transparent;
 }
 
 body {
@@ -59,6 +66,7 @@ body {
     padding: 5rem;
 
     overflow-x: hidden;
+
 }
 
 ::-webkit-scrollbar {
@@ -68,11 +76,18 @@ body {
     border-radius: 0.8rem;
     background-color: var(--azulAnimo);
 }
+
 ::-webkit-scrollbar-track {
     background-color: var(--azulEscuro);
     border-radius: 0.8rem;
 }
 
+.container-main.dark, .container.dark {
+    background-color: var(--mainDark);
+}
+h1.dark, h2.dark,h3.dark,h4.dark,h5.dark,h6.dark,p.dark,div.dark,span.dark {
+    color: var(--branco);
+}
 .container {
     width: 90vw;
     height: 90vh;
@@ -178,15 +193,35 @@ body {
     justify-content: space-between;
 }
 
+.content {
+    border-radius: 1.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    
+    background-color: var(--branco);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px 2px;
+}
+.content.dark {
+    background-color: var(--azulEsverdeado);
+}
+
 .theme {
     display: flex;
     align-items: center;
+    gap: 1rem
 }
 
 .theme,
 .logout {
     font-size: 1.6rem;
     cursor: pointer;
+}
+.theme i {
+    color: var(--cinzaEscuro);
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 /* Botão de modo noturno */
